@@ -1,0 +1,20 @@
+user,commitname,email,sha,id,datenum,groupid,reponame,conrepo,emailname,verify
+fantasai,Delan Azabani,dazabani@igalia.com,a92feba86033e3df4f51734cb964497d7085244f,24468670037,20221007172638,10,w3c/csswg-drafts,w3c/csswg-drafts,delan,True
+annevk,Delan Azabani,dazabani@igalia.com,f4436414776f29b19055b5da569f301861f44cf3,24529862432,20221011153555,10,w3c/csswg-drafts,whsieh/wpt,delan,False
+TalbotG,Delan Azabani,dazabani@igalia.com,2364c1455ef1e64ee7333f83d3626ab825227580,24308008740,20220929191629,10,w3c/csswg-drafts,TalbotG/web-platform-tests,delan,False
+TalbotG,Delan Azabani,dazabani@igalia.com,c0883fdb59a783615470067f728818e2abf96b1f,24308008740,20220929191629,10,w3c/csswg-drafts,TalbotG/web-platform-tests,delan,False
+TalbotG,Delan Azabani,dazabani@igalia.com,0592bb24e5501533a0250e3eab98814d958ac8eb,23262320925,20220804142623,10,w3c/csswg-drafts,TalbotG/web-platform-tests,delan,True
+TalbotG,Delan Azabani,dazabani@igalia.com,44b8bea2b5353594545a608789bc904c8a395429,23225056319,20220802223747,10,w3c/csswg-drafts,TalbotG/web-platform-tests,delan,False
+TalbotG,Delan Azabani,dazabani@igalia.com,48cf93337096b093fa94c13c484b5ad87a33b3f7,23170816046,20220730173045,10,w3c/csswg-drafts,TalbotG/web-platform-tests,delan,False
+dholbert,Delan Azabani,dazabani@igalia.com,f4436414776f29b19055b5da569f301861f44cf3,24212887347,20220926021416,10,w3c/csswg-drafts,dholbert/wpt,delan,False
+domenic,Delan Azabani,dazabani@igalia.com,f4436414776f29b19055b5da569f301861f44cf3,24542709199,20221012060516,10,w3c/csswg-drafts,web-platform-tests/wpt,delan,False
+dlrobertson,Delan Azabani,dazabani@igalia.com,0592bb24e5501533a0250e3eab98814d958ac8eb,24450274595,20221006220415,10,w3c/csswg-drafts,dlrobertson/wpt,delan,True
+
+jeehoonkang,Janggun Lee,leesisi123@naver.com,0601af90d310b3cbb9d5fbedaea46c5f7987a7f6,24540390921,20221012024904,24,kaist-cp/cs431,kaist-cp/cs431,Lee-Janggun,False
+jeehoonkang,Janggun Lee,leesisi123@naver.com,016dffa6127381a31f114dd8225d719da673bd9e,24540390921,20221012024904,24,kaist-cp/cs431,kaist-cp/cs431,Lee-Janggun,False
+jeehoonkang,Janggun Lee,leesisi123@naver.com,8df487b1737cdf494d099203b372ebd255730ab3,24540390921,20221012024904,24,kaist-cp/cs431,kaist-cp/cs431,Lee-Janggun,False
+jeehoonkang,Janggun Lee,leesisi123@naver.com,e5f2b0d3ee6251ea73c2191b9ee99bc21028161f,24540390921,20221012024904,24,kaist-cp/cs431,kaist-cp/cs431,Lee-Janggun,False
+jeehoonkang,Janggun Lee,janggun.lee@kaist.ac.kr,ec68a3fa7d40a884343f8f3fd67042808ea42951,23691634859,20220829112142,24,kaist-cp/cs431,kaist-cp/cs431,Lee-Janggun,False
+jeehoonkang,Janggun Lee,janggun.lee@kaist.ac.kr,9b8595856e476fdca769769b74a05f5200ac2ae8,23691634859,20220829112142,24,kaist-cp/cs431,kaist-cp/cs431,Lee-Janggun,False
+jeehoonkang,Janggun Lee,janggun.lee@kaist.ac.kr,835b287b656f42df645d5e07ee1d1bc229fc36d9,23684009939,20220829032033,24,kaist-cp/cs431,kaist-cp/cs431,Lee-Janggun,False
+Lee-Janggun,Janggun Lee,leesisi123@naver.com,b91012a86a985f830b17f78d7b22f99db3cb63ba,24127807967,20220921032049,24,kaist-cp/cs431,Lee-Janggun/cs492-program-reasoning,not_found,not found

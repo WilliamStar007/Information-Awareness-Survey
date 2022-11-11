@@ -1,0 +1,51 @@
+.box {
+    height: 400px;
+    width: 800px;
+    border: 1px solid #ccc;
+    font: 16px/26px Georgia;
+    overflow: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .box {
+        height: 300px;
+        width: 600px;
+        border: 1px solid #ccc;
+        font: 16px/26px Georgia;
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        height: 300px;
+        width: 500px;
+        border: 1px solid #ccc;
+        font: 16px/26px Georgia;
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .box {
+        height: 300px;
+        width: 480px;
+        border: 1px solid #ccc;
+        font: 16px/26px Georgia;
+        overflow: auto;
+    }
+}
+
+.margin {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.left {
+    text-indent: 5%;
+    text-align: justify;
+}
+
+.container {
+    text-align-all: start;
+}
