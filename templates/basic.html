@@ -5,7 +5,7 @@
     <title>GitHub User Information Awareness Survey</title>
     <link rel="stylesheet" href="../static/css/footer.css"/>
     <link rel="stylesheet" href="../static/css/center.css"/>
-    <link rel="stylesheet" href="../static/css/text-box.css"/>
+    <link rel="stylesheet" href="../static/css/choice.css"/>
     <style>
         body {
             background: azure;
@@ -16,11 +16,10 @@
         form {
             padding-top: 20px;
         }
-        input {
-            vertical-align: middle;
-        }
-        label {
-            vertical-align: middle;
+        table, th, td {
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
@@ -34,41 +33,217 @@
 </header>
 
 <body class="center">
-    <div class="box center">
-        <h4 class="margin"> Survey Introduction </h4>
-        <p class="left margin">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Viverra orci sagittis eu volutpat odio facilisis mauris sit.
-            Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Viverra orci sagittis eu volutpat odio facilisis mauris sit.
-            Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien.
-        </p>
-        <h4 class="margin"> Reward Statement </h4>
-        <p class="left margin">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Viverra orci sagittis eu volutpat odio facilisis mauris sit.
-            Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Viverra orci sagittis eu volutpat odio facilisis mauris sit.
-            Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien.
-        </p>
-    </div>
+    <h4>Programming Languages</h4>
+
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Commit Name</th>
+            <th>Email</th>
+            <th>Date</th>
+            <th>Repo Name</th>
+            <th>Verified</th>
+        </tr>
+        <tr>
+            <td>fantasai</td>
+            <td>Delan Azabani</td>
+            <td>dazabani@igalia.com</td>
+            <td>2022/10/11</td>
+            <td>w3c/csswg-drafts</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>annevk</td>
+            <td>Delan Azabani</td>
+            <td>dazabani@igalia.com</td>
+            <td>2022/09/29</td>
+            <td>w3c/csswg-drafts</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>TalbotG</td>
+            <td>Delan Azabani</td>
+            <td>dazabani@igalia.com</td>
+            <td>2022/08/04</td>
+            <td>w3c/csswg-drafts</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>TalbotG</td>
+            <td>Delan Azabani</td>
+            <td>dazabani@igalia.com</td>
+            <td>2022/08/02</td>
+            <td>w3c/csswg-drafts</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>TalbotG</td>
+            <td>Delan Azabani</td>
+            <td>dazabani@igalia.com</td>
+            <td>2022/07/30</td>
+            <td>w3c/csswg-drafts</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>TalbotG</td>
+            <td>Delan Azabani</td>
+            <td>dazabani@igalia.com</td>
+            <td>2022/09/26</td>
+            <td>w3c/csswg-drafts</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>TalbotG</td>
+            <td>Delan Azabani</td>
+            <td>dazabani@igalia.com</td>
+            <td>2022/10/12</td>
+            <td>w3c/csswg-drafts</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>dholbert</td>
+            <td>Delan Azabani</td>
+            <td>dazabani@igalia.com</td>
+            <td>2022/10/06</td>
+            <td>w3c/csswg-drafts</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>domenic</td>
+            <td>Delan Azabani</td>
+            <td>dazabani@igalia.com</td>
+            <td>2022/10/07</td>
+            <td>w3c/csswg-drafts</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>dlrobertson</td>
+            <td>Delan Azabani</td>
+            <td>dazabani@igalia.com</td>
+            <td>2022/10/07</td>
+            <td>w3c/csswg-drafts</td>
+            <td>True</td>
+        </tr>
+    </table>
 </body>
 
 <form>
-    <div class="container">
-        <input type="checkbox" id="consent" name="consent" value="agree">
-        <label for="consent">
-            I have read the Survey Introduction and Reward Statement
-        </label> <br><br>
-    </div>
+    <ul class="quiz">
+        <li>
+            <h4>How many letters are there in "JS"?</h4>
+            <ul class="choices">
+                <li>
+                    <label>
+                        <span class="center">
+                            <input type="radio" name="question0" value="A" />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <span class="center">
+                            <input type="radio" name="question0" value="A" />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <span class="center">
+                            <input type="radio" name="question0" value="A" />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <span class="center">
+                            <input type="radio" name="question0" value="A" />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </span>
+                    </label>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h4>How many letters are there in "BMX"?</h4>
+            <ul class="choices">
+                <li>
+                    <label>
+                        <span class="center">
+                            <input type="radio" name="question0" value="A" />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <span class="center">
+                            <input type="radio" name="question0" value="A" />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <span class="center">
+                            <input type="radio" name="question0" value="A" />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <span class="center">
+                            <input type="radio" name="question0" value="A" />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </span>
+                    </label>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h4>How many letters are there in "A"?</h4>
+            <ul class="choices">
+                <li>
+                    <label>
+                        <span class="center">
+                            <input type="radio" name="question0" value="A" />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <span class="center">
+                            <input type="radio" name="question0" value="A" />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <span class="center">
+                            <input type="radio" name="question0" value="A" />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <span class="center">
+                            <input type="radio" name="question0" value="A" />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </span>
+                    </label>
+                </li>
+            </ul>
+        </li>
+    </ul>
 
-    <input type="submit" value="Next">
+    <br><br>
+    <button>Submit</button>
 </form>
 
 <footer class="site-footer">
