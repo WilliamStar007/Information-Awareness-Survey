@@ -28,9 +28,9 @@
     </style>
 </head>
 
-<header>
+<header class="center">
     <a href="https://www.vanderbilt.edu">
-        <img src="../static/media/vu-logo.png" alt="vu-logo" width="150" class="center">
+        <img src="../static/media/vu-logo.png" alt="vu-logo" width="150">
     </a>
 
     <h2 class="center"> GitHub User Information Awareness Survey </h2>
@@ -65,25 +65,31 @@
 
 <form>
     <div class="container">
-        <input type="checkbox" id="consent" name="consent" value="agree">
+        <input type="checkbox" id="consent" value="agree">
         <label for="consent">
             I have read the Survey Introduction and Reward Statement
         </label> <br><br>
     </div>
 
     <div>
-        <button id="agree">Next</button>
+        <button id="next">Next</button>
         <script type="text/javascript">
-            document.getElementById("agree").onclick = function () {
-                window.location.href = "https://williamstar007.github.io/templates/basic.html";
+            document.getElementById("next").onclick = function () {
+                if (document.getElementById("consent").checked)
+                    window.location.href = "https://williamstar007.github.io/templates/basic.html";
+                else
+                    window.location.href = "https://williamstar007.github.io/templates/end.html";
+                return false;
             };
         </script>
     </div>
 </form>
 
-<footer class="site-footer">
+<footer class="site-footer center">
     <hr>
-    <img src="../static/media/vuse-logo.png" alt="vuse-logo" width="250" class="center">
+    <a href="https://engineering.vanderbilt.edu/">
+        <img src="../static/media/vuse-logo.png" alt="vuse-logo" width="250">
+    </a>
 
     <p class="caption">
         Copyright &copy; 2022 All Rights Reserved by
