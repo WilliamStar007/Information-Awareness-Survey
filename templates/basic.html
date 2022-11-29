@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../static/css/center.css"/>
     <link rel="stylesheet" href="../static/css/choice.css"/>
     <link rel="stylesheet" href="../static/css/hover.css"/>
+    <!--  js functions  -->
+    <script src="../static/js/include-html.js"></script>
     <!--  browser tab image  -->
     <link rel="icon" type="image/x-icon" href="../static/media/favicon.ico">
     <style>
@@ -46,6 +48,9 @@
 <body class="center">
     <!--  survey stimuli information  -->
     <h3 style="font: 20px Georgia">Commit Information</h3>
+    <script>
+
+    </script>
 
     <table style="font: 16px Georgia">
         <tr style="height:30px">
@@ -78,39 +83,17 @@
                 document.getElementById('email').innerHTML = email;
                 document.getElementById('date').innerHTML = date;
                 document.getElementById('repo').innerHTML = repo;
-                document.getElementById('sign').innerHTML = sign ? "True" : "False"
+                document.getElementById('sign').innerHTML = sign ? "True" : "False";
+
+                return false;
             }
         </script>
     </table>
 
     <!--  survey questions begin here  -->
-    <form>
-        <ul class="survey">
-            <li>
-                <h4>How many letters are there in "JS"?</h4>
-                <ul class="choices">
-                    <li>
-                        <label>
-                            <span class="center">
-                                <input type="radio" name="question0" value="A" />
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </span>
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <span class="center">
-                                <input type="radio" name="question0" value="A" />
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </span>
-                        </label>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+    <div include-html="questions.html"></div>
 
-        <button>Submit</button>
-    </form>
+    <button>Submit</button>
 </body>
 
 <footer class="site-footer center">
@@ -125,4 +108,10 @@
         Any Questions? <a href="mailto:anda.liang@vanderbilt.edu">Contact Us</a>
     </p>
 </footer>
+
+<!--  include necessary html  -->
+<script>
+    includeHTML();
+</script>
+
 </html>
