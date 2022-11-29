@@ -2,45 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--  browser tab title  -->
     <title>GitHub User Information Awareness Survey</title>
+    <!--  css style templates  -->
     <link rel="stylesheet" href="static/css/footer.css"/>
     <link rel="stylesheet" href="static/css/center.css"/>
     <link rel="stylesheet" href="static/css/text-box.css"/>
-    <!--  js functions  -->
-    <script src="static/js/include-html.js"></script>
     <!--  browser tab image  -->
     <link rel="icon" type="image/x-icon" href="static/media/favicon.ico">
     <style>
         body {
+            /*page background*/
             background: azure;
         }
         header {
+            /*header spacing*/
             padding-bottom: 20px;
         }
         form {
+            /*consent spacing*/
             padding-top: 20px;
         }
         input {
+            /*checkbox alignment*/
             vertical-align: middle;
         }
         label {
+            /*checkbox label alignment*/
             vertical-align: middle;
         }
         button {
+            /*button font*/
             font: 14px Georgia;
         }
     </style>
 </head>
 
-<header class="center">
-    <a href="https://www.vanderbilt.edu">
-        <img src="static/media/vu-logo.png" alt="vu-logo" width="150">
-    </a>
-
-    <h2 class="center" style="font: 24px Georgia"> GitHub User Information Awareness Survey </h2>
-</header>
-
 <body class="center">
+    <header>
+        <!--  header image  -->
+        <a href="https://www.vanderbilt.edu">
+            <img src="static/media/vu-logo.png" alt="vu-logo" width="150">
+        </a>
+        <!--  header title  -->
+        <h2 class="center" style="font: 24px Georgia"> GitHub User Information Awareness Survey </h2>
+    </header>
+
+    <!--  consent information  -->
     <div class="box center">
         <h4 class="margin"> Survey Introduction </h4>
         <p class="left margin">
@@ -65,37 +73,43 @@
             Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien.
         </p>
     </div>
+
+    <!--  consent checkbox  -->
+    <form>
+        <div class="container">
+            <input type="checkbox" id="consent" value="agree">
+            <label for="consent">
+                I have read the Survey Introduction and Reward Statement
+            </label> <br><br>
+        </div>
+
+        <div>
+            <button id="next">Next</button>
+            <script>
+                document.getElementById("next").onclick = function () {
+                    const repo_name = "Information-Awareness-Survey";
+                    if (document.getElementById("consent").checked)
+                        window.location.href = `https://williamstar007.github.io/${repo_name}/templates/basic.html`;
+                    else
+                        window.location.href = `https://williamstar007.github.io/${repo_name}/templates/end.html`;
+                    return false;
+                };
+            </script>
+        </div>
+    </form>
+
+    <!--  page footer  -->
+    <footer class="site-footer center">
+        <hr>
+        <a href="https://engineering.vanderbilt.edu/">
+            <img src="static/media/vuse-logo.png" alt="vuse-logo" width="250">
+        </a>
+
+        <p class="caption">
+            Copyright &copy; 2022 All Rights Reserved by
+            <a href="https://engineering.vanderbilt.edu/">VUSE</a>. <br>
+            Any Questions? <a href="mailto:anda.liang@vanderbilt.edu">Contact Us</a>
+        </p>
+    </footer>
 </body>
-
-<form>
-    <div class="container">
-        <input type="checkbox" id="consent" value="agree">
-        <label for="consent">
-            I have read the Survey Introduction and Reward Statement
-        </label> <br><br>
-    </div>
-
-    <div>
-        <button id="next">Next</button>
-        <script>
-            document.getElementById("next").onclick = function () {
-                const repo_name = "Information-Awareness-Survey";
-                if (document.getElementById("consent").checked)
-                    window.location.href = `https://williamstar007.github.io/${repo_name}/templates/basic.html`;
-                else
-                    window.location.href = `https://williamstar007.github.io/${repo_name}/templates/end.html`;
-                return false;
-            };
-        </script>
-    </div>
-</form>
-
-<!--  include footer  -->
-<div include-html="templates/footer.html"></div>
-
-<!--  include necessary html  -->
-<script>
-    includeHTML();
-</script>
-
 </html>
