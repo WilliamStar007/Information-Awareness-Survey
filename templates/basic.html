@@ -48,13 +48,30 @@
             <th style="width:100px"><span class="hovertext c6" data-hover="Signed Commit">Verified</span></th>
         </tr>
         <tr>
-            <td>fantasai</td>
-            <td>Delan Azabani</td>
-            <td>dazabani@igalia.com</td>
-            <td>2022/10/11</td>
-            <td>w3c/csswg-drafts</td>
-            <td>True</td>
+            <td id="account"></td>
+            <td id="name">Delan Azabani</td>
+            <td id="email">dazabani@igalia.com</td>
+            <td id="date">2022/10/11</td>
+            <td id="repo">w3c/csswg-drafts</td>
+            <td id="sign">True</td>
         </tr>
+        <script>
+            window.onload = function() {
+                let account = "fantasai";
+                let name = "Delan Azabani";
+                let email = "dazabani@igalia.com";
+                let date = "2022/10/11";
+                let repo = "w3c/csswg-drafts";
+                let sign = true;
+
+                document.getElementById('account').innerHTML = account;
+                document.getElementById('name').innerHTML = name;
+                document.getElementById('email').innerHTML = email;
+                document.getElementById('date').innerHTML = date;
+                document.getElementById('repo').innerHTML = repo;
+                document.getElementById('sign').innerHTML = sign ? "True" : "False"
+            }
+        </script>
     </table>
 </body>
 
