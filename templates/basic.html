@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../static/css/hover.css"/>
     <!--  js functions  -->
     <script src="../static/js/include-html.js"></script>
+    <script src="../static/js/pages.js"></script>
+    <script src="../static/js/load-info.js"></script>
     <!--  browser tab image  -->
     <link rel="icon" type="image/x-icon" href="../static/media/favicon.ico">
     <style>
@@ -48,50 +50,18 @@
 <body class="center">
     <!--  survey stimuli information  -->
     <h3 style="font: 20px Georgia">Commit Information</h3>
-    <script>
 
-    </script>
+    <section class="page">
+        <table style="font: 16px Georgia">
+            <!--  include column names  -->
+            <tr style="height:30px" include-html="columns.html"></tr>
+            <tr include-html="prompt.html"></tr>
+            <!--  TODO: change the onload function  -->
+        </table>
 
-    <table style="font: 16px Georgia">
-        <tr style="height:30px">
-            <th style="width:100px"><span class="hovertext c1" data-hover="GitHub Account Username">Username</span></th>
-            <th style="width:100px"><span class="hovertext c2" data-hover="Commit Author Name">Name</span></th>
-            <th style="width:200px"><span class="hovertext c3" data-hover="Commit Email Address">Email</span></th>
-            <th style="width:100px"><span class="hovertext c4" data-hover="Commit Date">Date</span></th>
-            <th style="width:200px"><span class="hovertext c5" data-hover="Repository Name">Repo Name</span></th>
-            <th style="width:100px"><span class="hovertext c6" data-hover="Signed Commit">Verified</span></th>
-        </tr>
-        <tr>
-            <td id="account"></td>
-            <td id="name"></td>
-            <td id="email"></td>
-            <td id="date"></td>
-            <td id="repo"></td>
-            <td id="sign"></td>
-        </tr>
-        <script>
-            window.onload = function() {
-                let account = "fantasai";
-                let name = "Delan Azabani";
-                let email = "dazabani@igalia.com";
-                let date = "2022/10/11";
-                let repo = "w3c/csswg-drafts";
-                let sign = true;
-
-                document.getElementById('account').innerHTML = account;
-                document.getElementById('name').innerHTML = name;
-                document.getElementById('email').innerHTML = email;
-                document.getElementById('date').innerHTML = date;
-                document.getElementById('repo').innerHTML = repo;
-                document.getElementById('sign').innerHTML = sign ? "True" : "False";
-
-                return false;
-            }
-        </script>
-    </table>
-
-    <!--  survey questions begin here  -->
-    <div include-html="questions.html"></div>
+        <!--  survey questions begin here  -->
+        <div include-html="questions.html"></div>
+    </section>
 
     <button>Submit</button>
 </body>
