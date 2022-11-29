@@ -2,23 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--  browser tab title  -->
     <title>GitHub User Information Awareness Survey</title>
+    <!--  css style templates  -->
     <link rel="stylesheet" href="../static/css/footer.css"/>
     <link rel="stylesheet" href="../static/css/center.css"/>
     <link rel="stylesheet" href="../static/css/choice.css"/>
     <link rel="stylesheet" href="../static/css/hover.css"/>
+    <!--  browser tab image  -->
     <link rel="icon" type="image/x-icon" href="../static/media/favicon.ico">
     <style>
         body {
+            /*background color*/
             background: azure;
         }
         header {
+            /*header spacing*/
             padding-bottom: 20px;
         }
         form {
+            /*survey question spacing*/
             padding-top: 20px;
         }
         table, th, td {
+            /*table spacing*/
             border: 1px solid black;
             margin-left: auto;
             margin-right: auto;
@@ -27,15 +34,17 @@
 </head>
 
 <header class="center">
+    <!--  header image  -->
     <a href="https://www.vanderbilt.edu">
         <img src="../static/media/vu-logo.png" alt="vu-logo" width="150">
     </a>
-
+    <!--  header title  -->
     <h2 class="center" style="font: 24px Georgia"> GitHub User Information Awareness Survey </h2>
     <progress id="file" value="10" max="100"> 10% </progress> <span style="font: 12px Georgia">&nbsp 10%</span>
 </header>
 
 <body class="center">
+    <!--  survey stimuli information  -->
     <h3 style="font: 20px Georgia">Commit Information</h3>
 
     <table style="font: 16px Georgia">
@@ -49,11 +58,11 @@
         </tr>
         <tr>
             <td id="account"></td>
-            <td id="name">Delan Azabani</td>
-            <td id="email">dazabani@igalia.com</td>
-            <td id="date">2022/10/11</td>
-            <td id="repo">w3c/csswg-drafts</td>
-            <td id="sign">True</td>
+            <td id="name"></td>
+            <td id="email"></td>
+            <td id="date"></td>
+            <td id="repo"></td>
+            <td id="sign"></td>
         </tr>
         <script>
             window.onload = function() {
@@ -73,35 +82,36 @@
             }
         </script>
     </table>
+
+    <!--  survey questions begin here  -->
+    <form>
+        <ul class="survey">
+            <li>
+                <h4>How many letters are there in "JS"?</h4>
+                <ul class="choices">
+                    <li>
+                        <label>
+                            <span class="center">
+                                <input type="radio" name="question0" value="A" />
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span class="center">
+                                <input type="radio" name="question0" value="A" />
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </span>
+                        </label>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <button>Submit</button>
+    </form>
 </body>
-
-<form>
-    <ul class="survey">
-        <li>
-            <h4>How many letters are there in "JS"?</h4>
-            <ul class="choices">
-                <li>
-                    <label>
-                        <span class="center">
-                            <input type="radio" name="question0" value="A" />
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                        </span>
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        <span class="center">
-                            <input type="radio" name="question0" value="A" />
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                        </span>
-                    </label>
-                </li>
-            </ul>
-        </li>
-    </ul>
-
-    <button>Submit</button>
-</form>
 
 <footer class="site-footer center">
     <hr>
