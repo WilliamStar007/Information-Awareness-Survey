@@ -35,3 +35,8 @@ function complete() {
     percent.innerHTML = "100%";
     return false;
 }
+
+function end() {
+    window.location.href = `https://williamstar007.github.io/${repoName()}/templates/end.html`;
+    return false;
+}
