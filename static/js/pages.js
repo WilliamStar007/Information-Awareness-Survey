@@ -1,13 +1,13 @@
 // function from https://stackoverflow.com/questions/19289105/multiple-pages-in-one-html-page
 
 function show(elementID) {
-    var ele = document.getElementById(elementID);
+    const ele = document.getElementById(elementID);
     if (!ele) {
         alert("no such element");
         return;
     }
-    var pages = document.getElementsByClassName('page');
-    for(var i = 0; i < pages.length; i++) {
+    const pages = document.getElementsByClassName('page');
+    for(let i = 0; i < pages.length; i++) {
         pages[i].style.display = 'none';
     }
     ele.style.display = 'block';

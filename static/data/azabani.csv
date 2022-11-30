@@ -1,0 +1,11 @@
+user,commitname,email,sha,id,datenum,groupid,reponame,conrepo,emailname,verify
+fantasai,Delan Azabani,dazabani@igalia.com,a92feba86033e3df4f51734cb964497d7085244f,24468670037,20221007172638,10,w3c/csswg-drafts,w3c/csswg-drafts,delan,True
+annevk,Delan Azabani,dazabani@igalia.com,f4436414776f29b19055b5da569f301861f44cf3,24529862432,20221011153555,10,w3c/csswg-drafts,whsieh/wpt,delan,False
+TalbotG,Delan Azabani,dazabani@igalia.com,2364c1455ef1e64ee7333f83d3626ab825227580,24308008740,20220929191629,10,w3c/csswg-drafts,TalbotG/web-platform-tests,delan,False
+TalbotG,Delan Azabani,dazabani@igalia.com,c0883fdb59a783615470067f728818e2abf96b1f,24308008740,20220929191629,10,w3c/csswg-drafts,TalbotG/web-platform-tests,delan,False
+TalbotG,Delan Azabani,dazabani@igalia.com,0592bb24e5501533a0250e3eab98814d958ac8eb,23262320925,20220804142623,10,w3c/csswg-drafts,TalbotG/web-platform-tests,delan,True
+TalbotG,Delan Azabani,dazabani@igalia.com,44b8bea2b5353594545a608789bc904c8a395429,23225056319,20220802223747,10,w3c/csswg-drafts,TalbotG/web-platform-tests,delan,False
+TalbotG,Delan Azabani,dazabani@igalia.com,48cf93337096b093fa94c13c484b5ad87a33b3f7,23170816046,20220730173045,10,w3c/csswg-drafts,TalbotG/web-platform-tests,delan,False
+dholbert,Delan Azabani,dazabani@igalia.com,f4436414776f29b19055b5da569f301861f44cf3,24212887347,20220926021416,10,w3c/csswg-drafts,dholbert/wpt,delan,False
+domenic,Delan Azabani,dazabani@igalia.com,f4436414776f29b19055b5da569f301861f44cf3,24542709199,20221012060516,10,w3c/csswg-drafts,web-platform-tests/wpt,delan,False
+dlrobertson,Delan Azabani,dazabani@igalia.com,0592bb24e5501533a0250e3eab98814d958ac8eb,24450274595,20221006220415,10,w3c/csswg-drafts,dlrobertson/wpt,delan,True

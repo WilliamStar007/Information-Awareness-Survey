@@ -1,0 +1,9 @@
+user,commitname,email,sha,id,datenum,groupid,reponame,conrepo,emailname,verify
+jeehoonkang,Janggun Lee,leesisi123@naver.com,0601af90d310b3cbb9d5fbedaea46c5f7987a7f6,24540390921,20221012024904,24,kaist-cp/cs431,kaist-cp/cs431,Lee-Janggun,False
+jeehoonkang,Janggun Lee,leesisi123@naver.com,016dffa6127381a31f114dd8225d719da673bd9e,24540390921,20221012024904,24,kaist-cp/cs431,kaist-cp/cs431,Lee-Janggun,False
+jeehoonkang,Janggun Lee,leesisi123@naver.com,8df487b1737cdf494d099203b372ebd255730ab3,24540390921,20221012024904,24,kaist-cp/cs431,kaist-cp/cs431,Lee-Janggun,False
+jeehoonkang,Janggun Lee,leesisi123@naver.com,e5f2b0d3ee6251ea73c2191b9ee99bc21028161f,24540390921,20221012024904,24,kaist-cp/cs431,kaist-cp/cs431,Lee-Janggun,False
+jeehoonkang,Janggun Lee,janggun.lee@kaist.ac.kr,ec68a3fa7d40a884343f8f3fd67042808ea42951,23691634859,20220829112142,24,kaist-cp/cs431,kaist-cp/cs431,Lee-Janggun,False
+jeehoonkang,Janggun Lee,janggun.lee@kaist.ac.kr,9b8595856e476fdca769769b74a05f5200ac2ae8,23691634859,20220829112142,24,kaist-cp/cs431,kaist-cp/cs431,Lee-Janggun,False
+jeehoonkang,Janggun Lee,janggun.lee@kaist.ac.kr,835b287b656f42df645d5e07ee1d1bc229fc36d9,23684009939,20220829032033,24,kaist-cp/cs431,kaist-cp/cs431,Lee-Janggun,False
+Lee-Janggun,Janggun Lee,leesisi123@naver.com,b91012a86a985f830b17f78d7b22f99db3cb63ba,24127807967,20220921032049,24,kaist-cp/cs431,Lee-Janggun/cs492-program-reasoning,not_found,not found

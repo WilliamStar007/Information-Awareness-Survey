@@ -1,3 +1,25 @@
+// function from https://stackoverflow.com/questions/7431268/how-to-read-data-from-csv-file-using-javascript
+
+function processData(allText) {
+    const allTextLines = allText.split(/\r\n|\n/);
+    const headers = allTextLines[0].split(',');
+    const lines = [];
+
+    for (let i = 1; i < allTextLines.length; i++) {
+        const data = allTextLines[i].split(',');
+        if (data.length === headers.length) {
+            let tarr = [];
+            for (var j = 0; j < headers.length; j++) {
+                tarr.push(headers[j] + ":" + data[j]);
+            }
+            lines.push(tarr);
+        }
+    }
+    console.log(lines);
+}
+
+
+
 window.onload = function() {
     let account = "fantasai";
     let name = "Delan Azabani";
