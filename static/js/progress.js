@@ -1,0 +1,23 @@
+// set progress bar attribute based on number of pages
+
+window.onload = function() {
+    const pages = document.getElementsByClassName('page');
+    let bar = document.getElementById('progress');
+    let percent = document.getElementById('percentage');
+
+    bar.setAttribute("value", "1");
+    bar.setAttribute("max", `${pages.length}`);
+    percent.innerHTML = `${Math.round(1/pages.length*100)}%`;
+    return false;
+}
+
+function advance() {
+    let bar = document.getElementById('progress');
+    let percent = document.getElementById('percentage');
+    const val = Number(bar.getAttribute("value"));
+    const max = Number(bar.getAttribute("max"));
+
+    bar.setAttribute("value", `${val+1}`);
+    percent.innerHTML = `${Math.round((val+1)/max*100)}%`;
+    return false;
+}
