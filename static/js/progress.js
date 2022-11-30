@@ -5,6 +5,10 @@ window.onload = function() {
     let bar = document.getElementById('progress');
     let percent = document.getElementById('percentage');
 
+    if (pages.length === 0) {
+        return complete();
+    }
+
     bar.setAttribute("value", "1");
     bar.setAttribute("max", `${pages.length}`);
     percent.innerHTML = `${Math.round(1/pages.length*100)}%`;
