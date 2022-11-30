@@ -12,36 +12,10 @@
     <script src="static/js/config.js"></script>
     <!--  browser tab image  -->
     <link rel="icon" type="image/x-icon" href="static/media/favicon.ico">
-    <style>
-        body {
-            /*page background*/
-            background: azure;
-        }
-        header {
-            /*header spacing*/
-            padding-bottom: 20px;
-        }
-        form {
-            /*consent spacing*/
-            padding-top: 20px;
-        }
-        input {
-            /*checkbox alignment*/
-            vertical-align: middle;
-        }
-        label {
-            /*checkbox label alignment*/
-            vertical-align: middle;
-        }
-        button {
-            /*button font*/
-            font: 14px Georgia;
-        }
-    </style>
 </head>
 
-<body class="center">
-    <header>
+<body class="center" style="background: azure;">
+    <header style="padding-bottom: 20px;">
         <!--  header image  -->
         <a href="https://www.vanderbilt.edu">
             <img src="static/media/vu-logo.png" alt="vu-logo" width="150">
@@ -77,16 +51,16 @@
     </div>
 
     <!--  consent checkbox  -->
-    <form>
+    <form style="padding-top: 20px;">
         <div class="container">
-            <input type="checkbox" id="consent" value="agree">
-            <label for="consent">
+            <input type="checkbox" id="consent" value="agree" style="vertical-align: middle;">
+            <label for="consent" style="vertical-align: middle;">
                 I have read the Survey Introduction and Reward Statement
             </label> <br><br>
         </div>
 
         <div>
-            <button id="next">Next</button>
+            <button id="next" style="font: 14px Georgia;">Next</button>
             <script>
                 document.getElementById("next").onclick = function () {
                     if (document.getElementById("consent").checked)
