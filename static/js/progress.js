@@ -21,3 +21,13 @@ function advance() {
     percent.innerHTML = `${Math.round((val+1)/max*100)}%`;
     return false;
 }
+
+function complete() {
+    let bar = document.getElementById('progress');
+    let percent = document.getElementById('percentage');
+    const max = bar.getAttribute("max");
+
+    bar.setAttribute("value", `${max}`);
+    percent.innerHTML = "100%";
+    return false;
+}
