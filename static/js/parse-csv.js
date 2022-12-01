@@ -8,9 +8,9 @@ function processData(allText) {
     for (let i = 1; i < allTextLines.length; i++) {
         const data = allTextLines[i].split(',');
         if (data.length === headers.length) {
-            let tarr = [];
-            for (var j = 0; j < headers.length; j++) {
-                tarr.push(headers[j] + ":" + data[j]);
+            const tarr = [];
+            for (let j = 0; j < headers.length; j++) {
+                tarr.push(data[j]);
             }
             lines.push(tarr);
         }

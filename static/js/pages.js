@@ -1,7 +1,9 @@
 // functions to display survey pages
 
 // function to load information into table cells
-function populateData(pageID, data) {
+function populateData(pageID) {
+    // use page number to retrieve data
+    const data = getData(Number(pageID.match(/\d+/)[0]));
     const tbl = document.getElementById(pageID).getElementsByTagName('table');
     const cells = tbl[0].rows[1].getElementsByTagName('td');
 
