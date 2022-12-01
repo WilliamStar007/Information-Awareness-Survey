@@ -4,6 +4,12 @@
   cursor: help;
 }
 
+.hovertext.link:before {
+  width: max-content;
+  left: -5%;
+  bottom: -150%;
+}
+
 .hovertext.c1:before {
   width: 100%;
   left: -5%;

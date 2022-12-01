@@ -1,20 +1,24 @@
 // set progress bar attribute based on number of pages
 
 let accumulator = 0;
+let init = false;
 
 function progressInit() {
-    const pages = document.getElementsByClassName('page');
-    const bar = document.getElementById('progress');
-    const percent = document.getElementById('percentage');
+    if (!init) {
+        init = true;
 
-    if (pages.length === 0) {
-        return complete();
+        const pages = document.getElementsByClassName('page');
+        const bar = document.getElementById('progress');
+        const percent = document.getElementById('percentage');
+
+        if (pages.length === 0) {
+            complete();
+        }
+
+        bar.setAttribute("value", "1");
+        bar.setAttribute("max", `${pages.length}`);
+        percent.innerHTML = `${Math.round(1 / pages.length * 100)}%`;
     }
-
-    bar.setAttribute("value", "1");
-    bar.setAttribute("max", `${pages.length}`);
-    percent.innerHTML = `${Math.round(1/pages.length*100)}%`;
-    return true;
 }
 
 function advance() {
@@ -42,7 +46,6 @@ function complete() {
 
     bar.setAttribute("value", `${max}`);
     percent.innerHTML = "100%";
-    return false;
 }
 
 function end() {

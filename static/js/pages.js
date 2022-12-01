@@ -4,12 +4,19 @@
 function populateData(pageID) {
     // use page number to retrieve data
     const data = getData(Number(pageID.match(/\d+/)[0]));
-    const tbl = document.getElementById(pageID).getElementsByTagName('table');
-    const cells = tbl[0].rows[1].getElementsByTagName('td');
+    const tbl = document.getElementById(pageID).getElementsByTagName('table')[0];
+    const cells = tbl.rows[1].getElementsByTagName('td');
 
     for (let i = 0; i < cells.length; ++i) {
         cells[i].innerHTML = data[i];
     }
+
+    // populate GitHub link
+    const ele = document.getElementById(pageID).getElementsByTagName('a')[0];
+    let link = `https://github.com/${data[4]}/commit/${data[6]}`;
+    ele.setAttribute('href', link);
+    ele.setAttribute('data-hover', link);
+    console.log(ele);
 
     return true;
 }
