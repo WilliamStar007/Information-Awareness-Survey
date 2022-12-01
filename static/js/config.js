@@ -85,6 +85,4 @@ ready(function() {
     loadFile("azabani").then(value => {
         data = processData(value);
     });
-
-    // progressInit();
 });
