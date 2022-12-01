@@ -3,20 +3,8 @@
 let accumulator = 0;
 
 function progressInit() {
-    console.log(document);
-    console.log(document.getElementsByClassName('page'));
-    console.log((document.getElementsByClassName('page')).length);
-    console.log(document);
-
     const pages = document.getElementsByClassName('page');
-    console.log(pages);
-    console.log(pages.length);
-    console.log(document.getElementsByClassName('page'));
-    console.log(document.getElementsByClassName('page').length);
-    console.log(document.getElementById('progress'));
     const bar = document.getElementById('progress');
-    console.log(document);
-    console.log(bar);
     const percent = document.getElementById('percentage');
 
     if (pages.length === 0) {
@@ -59,5 +47,6 @@ function complete() {
 
 function end() {
     window.location.href = `https://williamstar007.github.io/${repoName()}/templates/end.html`;
+    complete();
     return false;
 }

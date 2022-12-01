@@ -84,17 +84,11 @@ ready = (function () {
 ready(function() {
     user = 'azabani';
 
+    includeHTML();
+
     loadFile("azabani").then(value => {
         data = processData(value);
     });
 
-    const progressBar = progressInit();
-    if (progressBar !== true) {
-        alert("progress bar error");
-    }
-
-    const tableInfo = populateData('Page1');
-    if (tableInfo !== true) {
-        alert("information load error");
-    }
+    // progressInit();
 });
