@@ -3,9 +3,13 @@
 let accumulator = 0;
 
 function progressInit() {
+    console.log(document);
+    console.log(document.getElementsByClassName('page'));
+    console.log((document.getElementsByClassName('page')).length);
+
     const pages = document.getElementsByClassName('page');
-    let bar = document.getElementById('progress');
-    let percent = document.getElementById('percentage');
+    const bar = document.getElementById('progress');
+    const percent = document.getElementById('percentage');
 
     if (pages.length === 0) {
         return complete();

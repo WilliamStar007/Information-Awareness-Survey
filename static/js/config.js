@@ -1,18 +1,8 @@
 // global config information
 
-let user, data, csv;
+let user, data;
 
 user = 'azabani';
-fetch(`../static/data/${user}.csv`).then(function(response) {
-    if (response.status !== 200) {
-        throw response.status;
-    }
-    return response.text();
-}).then(function(file_content) {
-    csv = file_content;
-}).catch(function(status) {
-    console.log('Error ' + status);
-});
 
 function getData(promptNum) {
     return data[promptNum-1];
@@ -23,14 +13,17 @@ function repoName() {
 }
 
 window.onload = function() {
-    data = processData(csv);
+    loadFile("azabani").then(value => {
+        data = processData(value);
+    });
+
     const progressBar = progressInit();
     if (progressBar !== true) {
         alert("progress bar error");
     }
-
-    const tableInfo = populateData('Page1');
-    if (tableInfo !== true) {
-        alert("information load error");
-    }
+    //
+    // const tableInfo = populateData('Page1');
+    // if (tableInfo !== true) {
+    //     alert("information load error");
+    // }
 }
