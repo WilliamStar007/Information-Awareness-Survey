@@ -1,11 +1,11 @@
 user,commitname,email,datenum,conrepo,verify,sha
-fantasai,Delan Azabani,dazabani@igalia.com,2.0221E+13,w3c/csswg-drafts,TRUE,a92feba86033e3df4f51734cb964497d7085244f
-annevk,Delan Azabani,dazabani@igalia.com,2.0221E+13,whsieh/wpt,FALSE,f4436414776f29b19055b5da569f301861f44cf3
-TalbotG,Delan Azabani,dazabani@igalia.com,2.02209E+13,TalbotG/web-platform-tests,FALSE,2364c1455ef1e64ee7333f83d3626ab825227580
-TalbotG,Delan Azabani,dazabani@igalia.com,2.02209E+13,TalbotG/web-platform-tests,FALSE,c0883fdb59a783615470067f728818e2abf96b1f
-TalbotG,Delan Azabani,dazabani@igalia.com,2.02208E+13,TalbotG/web-platform-tests,TRUE,0592bb24e5501533a0250e3eab98814d958ac8eb
-TalbotG,Delan Azabani,dazabani@igalia.com,2.02208E+13,TalbotG/web-platform-tests,FALSE,44b8bea2b5353594545a608789bc904c8a395429
-TalbotG,Delan Azabani,dazabani@igalia.com,2.02207E+13,TalbotG/web-platform-tests,FALSE,48cf93337096b093fa94c13c484b5ad87a33b3f7
-dholbert,Delan Azabani,dazabani@igalia.com,2.02209E+13,dholbert/wpt,FALSE,f4436414776f29b19055b5da569f301861f44cf3
-domenic,Delan Azabani,dazabani@igalia.com,2.0221E+13,web-platform-tests/wpt,FALSE,f4436414776f29b19055b5da569f301861f44cf3
-dlrobertson,Delan Azabani,dazabani@igalia.com,2.0221E+13,dlrobertson/wpt,TRUE,0592bb24e5501533a0250e3eab98814d958ac8eb
+fantasai,Delan Azabani,dazabani@igalia.com,20221007172638,w3c/csswg-drafts,TRUE,a92feba86033e3df4f51734cb964497d7085244f
+annevk,Delan Azabani,dazabani@igalia.com,20221011153555,whsieh/wpt,FALSE,f4436414776f29b19055b5da569f301861f44cf3
+TalbotG,Delan Azabani,dazabani@igalia.com,20220929191629,TalbotG/web-platform-tests,FALSE,2364c1455ef1e64ee7333f83d3626ab825227580
+TalbotG,Delan Azabani,dazabani@igalia.com,20220929191629,TalbotG/web-platform-tests,FALSE,c0883fdb59a783615470067f728818e2abf96b1f
+TalbotG,Delan Azabani,dazabani@igalia.com,20220804142623,TalbotG/web-platform-tests,TRUE,0592bb24e5501533a0250e3eab98814d958ac8eb
+TalbotG,Delan Azabani,dazabani@igalia.com,20220802223747,TalbotG/web-platform-tests,FALSE,44b8bea2b5353594545a608789bc904c8a395429
+TalbotG,Delan Azabani,dazabani@igalia.com,20220730173045,TalbotG/web-platform-tests,FALSE,48cf93337096b093fa94c13c484b5ad87a33b3f7
+dholbert,Delan Azabani,dazabani@igalia.com,20220926021416,dholbert/wpt,FALSE,f4436414776f29b19055b5da569f301861f44cf3
+domenic,Delan Azabani,dazabani@igalia.com,20221012060516,web-platform-tests/wpt,FALSE,f4436414776f29b19055b5da569f301861f44cf3
+dlrobertson,Delan Azabani,dazabani@igalia.com,20221006220415,dlrobertson/wpt,TRUE,0592bb24e5501533a0250e3eab98814d958ac8eb
