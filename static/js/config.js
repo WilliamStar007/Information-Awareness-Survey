@@ -6,10 +6,6 @@ function getData(promptNum) {
     return data[promptNum-1];
 }
 
-function repoName() {
-    return "Information-Awareness-Survey";
-}
-
 // adapted from https://stackoverflow.com/questions/3430455/document-ready-source
 ready = (function () {
     let ready_event_fired = false;

@@ -46,6 +46,7 @@ function complete() {
 }
 
 function end() {
-    window.location.href = `https://williamstar007.github.io/${repoName()}/templates/end.html`;
+    const root = "https://williamstar007.github.io/Information-Awareness-Survey";
+    window.location.href = `${root}/templates/end.html`;
     return false;
 }
