@@ -6,9 +6,17 @@ function progressInit() {
     console.log(document);
     console.log(document.getElementsByClassName('page'));
     console.log((document.getElementsByClassName('page')).length);
+    console.log(document);
 
     const pages = document.getElementsByClassName('page');
+    console.log(pages);
+    console.log(pages.length);
+    console.log(document.getElementsByClassName('page'));
+    console.log(document.getElementsByClassName('page').length);
+    console.log(document.getElementById('progress'));
     const bar = document.getElementById('progress');
+    console.log(document);
+    console.log(bar);
     const percent = document.getElementById('percentage');
 
     if (pages.length === 0) {
@@ -40,8 +48,8 @@ function back() {
 }
 
 function complete() {
-    let bar = document.getElementById('progress');
-    let percent = document.getElementById('percentage');
+    const bar = document.getElementById('progress');
+    const percent = document.getElementById('percentage');
     const max = bar.getAttribute("max");
 
     bar.setAttribute("value", `${max}`);

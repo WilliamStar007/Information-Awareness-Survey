@@ -1,4 +1,4 @@
-//
+// adapted from https://dmitripavlutin.com/javascript-fetch-async-await/
 
 async function loadFile(filename) {
     return await fetch(`../static/data/${user}.csv`).then(function (response) {
