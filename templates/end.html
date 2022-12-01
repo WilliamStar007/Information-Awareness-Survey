@@ -15,15 +15,34 @@
 
 <body class="center" style="background: azure;">
     <!--  include header  -->
-    <div include-html="header.html"></div>
+    <header style="padding-bottom: 20px;">
+        <!--  header image  -->
+        <a href="https://www.vanderbilt.edu">
+            <img src="../static/media/vu-logo.png" alt="vu-logo" width="150">
+        </a>
+        <!--  header title  -->
+        <h2 class="center" style="font: 24px Georgia"> GitHub User Information Awareness Survey </h2>
+        <progress id="progress" value="100" max="100"></progress>
+        <span id="percentage" style="font: 12px Georgia">100%</span>
+    </header>
 
     <p>
         We thank you for your time spent taking this survey. <br>
         Your response has been recorded.
     </p>
 
-    <!--  include footer  -->
-    <div include-html="footer.html"></div>
+    <footer class="site-footer center">
+        <hr>
+        <a href="https://engineering.vanderbilt.edu/">
+            <img src="../static/media/vuse-logo.png" alt="vuse-logo" width="250">
+        </a>
+
+        <p class="caption">
+            Copyright &copy; 2022 All Rights Reserved by
+            <a href="https://engineering.vanderbilt.edu/">VUSE</a>. <br>
+            Any Questions? <a href="mailto:anda.liang@vanderbilt.edu">Contact Us</a>
+        </p>
+    </footer>
 </body>
 
 <!--  include necessary html  -->
