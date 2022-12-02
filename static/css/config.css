@@ -4,6 +4,9 @@ button {
 
 body {
     background: azure;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 header {

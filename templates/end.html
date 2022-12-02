@@ -6,15 +6,11 @@
     <link rel="stylesheet" href="../static/css/config.css"/>
     <link rel="stylesheet" href="../static/css/footer.css"/>
     <link rel="stylesheet" href="../static/css/center.css"/>
-    <link rel="stylesheet" href="../static/css/text-box.css"/>
-    <!--  js functions  -->
-    <script src="../static/js/include-html.js"></script>
-    <script src="../static/js/progress.js"></script>
     <!--  browser tab image  -->
     <link rel="icon" type="image/x-icon" href="../static/media/favicon.ico">
 </head>
 
-<body class="center">
+<body>
     <!--  include header  -->
     <header>
         <!--  header image  -->
@@ -27,9 +23,14 @@
         <span id="percentage" style="font: 12px Georgia">100%</span>
     </header>
 
-    <div>
+    <div id="end">
         We thank you for your time spent taking this survey. <br>
         Your response has been recorded.
+    </div>
+
+    <div id="error" style="display: none">
+        ERROR: Invalid SurveyID in query parameter. <br>
+        Please contact website owner for support.
     </div>
 
     <footer class="site-footer center">
@@ -44,11 +45,24 @@
             Any Questions? <a href="mailto:anda.liang@vanderbilt.edu">Contact Us</a>
         </p>
     </footer>
-</body>
 
-<!--  include necessary html  -->
-<script>
-    includeHTML();
-</script>
+    <!--  load page based on status  -->
+    <script type="text/javascript">
+        document.onload = function() {
+            const status = query('Status');
+            if (status === "error") {
+                const end = document.getElementById('end');
+                const error = document.getElementById('error');
+                const progress = document.getElementById('progress');
+                const percentage = document.getElementById('percentage');
+
+                end.style.display = 'none';
+                error.style.display = 'block';
+                progress.style.display = 'none';
+                percentage.style.display = 'none';
+            }
+        }
+    </script>
+</body>
 
 </html>

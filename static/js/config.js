@@ -6,6 +6,12 @@ function getData(promptNum) {
     return data[promptNum-1];
 }
 
+function errorHandle() {
+    const root = "https://williamstar007.github.io/Information-Awareness-Survey";
+    window.location.href = `${root}/templates/end.html?Status=error`;
+    return false;
+}
+
 // adapted from https://stackoverflow.com/questions/3430455/document-ready-source
 ready = (function () {
     let ready_event_fired = false;
@@ -79,20 +85,12 @@ ready = (function () {
 
 ready(function() {
     // get user name from query parameter
-    user = query();
-    if (user === "null") {
-        const error = document.getElementById('error');
-        error.style.display = 'block';
-        return;
-    }
+    user = query('SurveyID');
+    if (user === "null") errorHandle();
 
     // load csv file into data
     loadFile(user).then(value => {
-        if (!value) {
-            const error = document.getElementById('error');
-            error.style.display = 'block';
-            return;
-        }
+        if (!value) errorHandle();
         data = processData(value);
     });
 
