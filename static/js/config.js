@@ -81,7 +81,7 @@ ready(function() {
     // get user name from query parameter
     user = query();
     if (user === "null") {
-        const error = document.getElementById('null-error');
+        const error = document.getElementById('error');
         error.style.display = 'block';
         return;
     }
@@ -89,7 +89,7 @@ ready(function() {
     // load csv file into data
     loadFile(user).then(value => {
         if (!value) {
-            const error = document.getElementById('load-error');
+            const error = document.getElementById('error');
             error.style.display = 'block';
             return;
         }

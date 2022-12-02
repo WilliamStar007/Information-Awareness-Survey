@@ -3,7 +3,7 @@
 function query() {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    return urlParams.get('surveyID');
+    return urlParams.get('SurveyID');
 }
 
 function redirect() {
@@ -11,7 +11,7 @@ function redirect() {
     const root = "https://williamstar007.github.io/Information-Awareness-Survey";
 
     if (document.getElementById("consent").checked)
-        window.location.href = `${root}/templates/basic.html?surveyID=${surveyID}`;
+        window.location.href = `${root}/templates/basic.html?SurveyID=${surveyID}`;
     else
         window.location.href = `${root}/templates/end.html`;
 
