@@ -1,0 +1,13 @@
+/*css from https://stackoverflow.com/questions/20516358/how-to-center-two-columns-using-css-without-using-a-fixed-width-container*/
+
+.column {
+    margin:auto;
+    width: 500px;
+    display: inline-block;
+}
+
+.container {
+    margin:auto;
+    padding-bottom: 50px;
+    text-align: center;
+}
