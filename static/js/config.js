@@ -80,12 +80,22 @@ ready = (function () {
 ready(function() {
     // get user name from query parameter
     user = query();
-
-    // include necessary html file into document
-    includeHTML();
+    if (user === "null") {
+        const error = document.getElementById('null-error');
+        error.style.display = 'block';
+        return;
+    }
 
     // load csv file into data
     loadFile(user).then(value => {
+        if (!value) {
+            const error = document.getElementById('load-error');
+            error.style.display = 'block';
+            return;
+        }
         data = processData(value);
     });
+
+    // include necessary html file into document
+    includeHTML();
 });
