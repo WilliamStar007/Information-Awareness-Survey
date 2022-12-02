@@ -78,11 +78,11 @@ ready = (function () {
 })();
 
 ready(function() {
-    user = 'azabani';
+    user = query();
 
     includeHTML();
 
-    loadFile("azabani").then(value => {
+    loadFile(user).then(value => {
         data = processData(value);
     });
 });
