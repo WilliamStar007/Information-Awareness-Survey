@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="../static/css/config.css"/>
     <link rel="stylesheet" href="../static/css/footer.css"/>
     <link rel="stylesheet" href="../static/css/center.css"/>
+    <!--  js functions  -->
+    <script src="../static/js/query.js"></script>
     <!--  browser tab image  -->
     <link rel="icon" type="image/x-icon" href="../static/media/favicon.ico">
 </head>
@@ -19,16 +21,16 @@
         </a>
         <!--  header title  -->
         <h2 class="center" style="font: 24px Georgia"> GitHub User Information Awareness Survey </h2>
-        <progress id="progress" value="100" max="100"></progress>
-        <span id="percentage" style="font: 12px Georgia">100%</span>
+        <progress class="end" id="progress" value="100" max="100"></progress>
+        <span class="end" id="percentage" style="font: 12px Georgia">100%</span>
     </header>
 
-    <div id="end">
+    <div class="end">
         We thank you for your time spent taking this survey. <br>
         Your response has been recorded.
     </div>
 
-    <div id="error" style="display: none">
+    <div class="error" style="display: none;">
         ERROR: Invalid SurveyID in query parameter. <br>
         Please contact website owner for support.
     </div>
@@ -48,20 +50,16 @@
 
     <!--  load page based on status  -->
     <script type="text/javascript">
-        document.onload = function() {
+        window.onload = function() {
             const status = query('Status');
             if (status === "error") {
-                const end = document.getElementById('end');
-                const error = document.getElementById('error');
-                const progress = document.getElementById('progress');
-                const percentage = document.getElementById('percentage');
+                const endElems = document.getElementsByClassName('end');
+                const errorElems = document.getElementsByClassName('error');
 
-                end.style.display = 'none';
-                error.style.display = 'block';
-                progress.style.display = 'none';
-                percentage.style.display = 'none';
+                for (const ele of endElems) ele.style.display = 'none';
+                for (const ele of errorElems) ele.style.display = 'block';
             }
-        }
+        };
     </script>
 </body>
 
