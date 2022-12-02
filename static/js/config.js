@@ -78,10 +78,13 @@ ready = (function () {
 })();
 
 ready(function() {
+    // get user name from query parameter
     user = query();
 
+    // include necessary html file into document
     includeHTML();
 
+    // load csv file into data
     loadFile(user).then(value => {
         data = processData(value);
     });
