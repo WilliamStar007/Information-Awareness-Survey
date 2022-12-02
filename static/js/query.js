@@ -7,11 +7,11 @@ function query() {
 }
 
 function redirect() {
-    // const surveyID = query();
+    const surveyID = query();
     const root = "https://williamstar007.github.io/Information-Awareness-Survey";
 
     if (document.getElementById("consent").checked)
-        window.location.href = `${root}/templates/basic.html/?surveyID=${1}`;
+        window.location.href = `${root}/templates/basic.html?surveyID=${surveyID}`;
     else
         window.location.href = `${root}/templates/end.html`;
 
