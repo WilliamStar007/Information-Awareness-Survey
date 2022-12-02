@@ -4,8 +4,9 @@
 }
 
 .caption {
-    margin: 0;
+    margin-top: -15px;
     text-align: center;
+    padding-bottom: 15px;
 }
 
 .center {

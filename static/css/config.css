@@ -1,0 +1,30 @@
+button {
+    font: 14px Georgia;
+}
+
+body {
+    background: azure;
+}
+
+header {
+    padding-bottom: 20px;
+}
+
+h3 {
+    font: 20px Georgia;
+}
+
+table, th, td, tr {
+    /*table spacing*/
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    font: 16px Georgia;
+}
+
+tr {
+    height:30px;
+}

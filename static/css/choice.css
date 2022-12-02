@@ -3,11 +3,7 @@
 *:after {
     box-sizing: inherit;
 }
-body {
-    font-family: sans-serif;
-    padding: 1rem;
-    background-color: orange;
-}
+
 .survey,
 .choices {
     list-style-type: none;
