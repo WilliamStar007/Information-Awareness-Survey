@@ -10,7 +10,6 @@
     padding: 0;
 }
 .choices li {
-    text-align: start;
     margin-bottom: 5px;
 }
 .choices label {
@@ -32,4 +31,9 @@ input[type="radio"] {
     background: teal;
     border-radius: 8px;
     margin-right: 5px;
+}
+
+.center-left {
+    display: inline-block;
+    text-align: left;
 }
