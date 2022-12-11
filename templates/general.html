@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub User Information Awareness Survey</title>
+    <!--  css style templates  -->
+    <link rel="stylesheet" href="../static/css/config.css"/>
+    <link rel="stylesheet" href="../static/css/center.css"/>
+    <link rel="stylesheet" href="../static/css/choice.css"/>
+    <link rel="stylesheet" href="../static/css/column.css"/>
+    <link rel="stylesheet" href="../static/css/footer.css"/>
+    <link rel="stylesheet" href="../static/css/hover.css"/>
+    <!--  js functions  -->
+    <script src="../static/js/file.js"></script>
+    <script src="../static/js/include-html.js"></script>
+    <script src="../static/js/pages.js"></script>
+    <script src="../static/js/parse-csv.js"></script>
+    <script src="../static/js/progress.js"></script>
+    <script src="../static/js/query.js"></script>
+    <!--  browser tab image  -->
+    <link rel="icon" type="image/x-icon" href="../static/media/favicon.ico">
+</head>
+
+<body>
+    <!--  include header  -->
+    <header>
+        <!--  header image  -->
+        <a href="https://www.vanderbilt.edu">
+            <img src="../static/media/vu-logo.png" alt="vu-logo" width="150">
+        </a>
+        <!--  header title  -->
+        <h2 class="center" style="font: 24px Georgia"> GitHub User Information Awareness Survey </h2>
+        <progress class="end" id="progress" value="100" max="100"></progress>
+        <span class="end" id="percentage" style="font: 12px Georgia">100%</span>
+    </header>
+    <div class="container">
+        <div class="column">
+            <form style="padding-top: 20px;">
+                <ul class="survey">
+                    <li>
+                        <h4>Before taking this survey, were you aware that<br>
+                            your name and email information are public?</h4>
+                        <ul class="choices center-left">
+                            <li>
+                                <label>
+                                    <span>
+                                        <input type="radio" name="question0" value="A"/>
+                                        Yes, I was aware that my information are public.
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>
+                                        <input type="radio" name="question0" value="A"/>
+                                        No, I was not aware that my information are public.
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>
+                                        <input type="radio" name="question0" value="A"/>
+                                        Yes and no, I did not know the extent of information made public.
+                                    </span>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="column">
+            <form style="padding-top: 20px;">
+                <ul class="survey">
+                    <li>
+                        <h4>Before taking this survey, were you <br>
+                            aware of the commit signing procedure?</h4>
+                        <ul class="choices center-left">
+                            <li>
+                                <label>
+                                    <span>
+                                        <input type="radio" name="question0" value="A"/>
+                                        Yes, I was aware of the commit signing procedure.
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>
+                                        <input type="radio" name="question0" value="A"/>
+                                        No, I was not aware of the commit signing procedure.
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>
+                                        <input type="radio" name="question0" value="A"/>
+                                        Yes and no, I have heard of commit signing before.
+                                    </span>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="column">
+            <form style="padding-top: 20px;">
+                <ul class="survey">
+                    <li>
+                        <h4>Before taking this survey, how concerned <br>
+                            were you about your information security?</h4>
+                        <ul class="choices center-left">
+                            <li>
+                                <label>
+                                    <span>
+                                        <input type="radio" name="question0" value="A"/>
+                                        Very concerned
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>
+                                        <input type="radio" name="question0" value="A"/>
+                                        Moderately concerned
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>
+                                        <input type="radio" name="question0" value="A"/>
+                                        Neutral
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>
+                                        <input type="radio" name="question0" value="A"/>
+                                        Not concerned.
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>
+                                        <input type="radio" name="question0" value="A"/>
+                                        Not concerned at all.
+                                    </span>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="column">
+            <form style="padding-top: 20px;">
+                <ul class="survey">
+                    <li>
+                        <h4>After taking this survey, how concerned <br>
+                            are you about your information security?</h4>
+                        <ul class="choices center-left">
+                            <li>
+                                <label>
+                                    <span>
+                                        <input type="radio" name="question0" value="A"/>
+                                        Very concerned
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>
+                                        <input type="radio" name="question0" value="A"/>
+                                        Moderately concerned
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>
+                                        <input type="radio" name="question0" value="A"/>
+                                        Neutral
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>
+                                        <input type="radio" name="question0" value="A"/>
+                                        Not concerned.
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>
+                                        <input type="radio" name="question0" value="A"/>
+                                        Not concerned at all.
+                                    </span>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+
+<!--    <footer class="site-footer center">-->
+<!--        <hr>-->
+<!--        <a href="https://engineering.vanderbilt.edu/">-->
+<!--            <img src="../static/media/vuse-logo.png" alt="vuse-logo" width="250" style="margin-top: -10px">-->
+<!--        </a>-->
+
+<!--        <p class="caption" style="font: 15px Times;">-->
+<!--            Copyright &copy; 2022 All Rights Reserved by-->
+<!--            <a href="https://engineering.vanderbilt.edu/">VUSE</a>. <br>-->
+<!--            Any Questions? <a href="mailto:anda.liang@vanderbilt.edu">Contact Us</a>-->
+<!--        </p>-->
+<!--    </footer>-->
+</body>
+
+</html>

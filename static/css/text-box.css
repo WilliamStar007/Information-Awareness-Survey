@@ -1,5 +1,5 @@
 .box {
-    height: 400px;
+    height: 700px;
     width: 800px;
     border: 1px solid #ccc;
     font: 16px/26px Georgia;
@@ -42,7 +42,6 @@
 }
 
 .left {
-    text-indent: 5%;
     text-align: justify;
 }
 

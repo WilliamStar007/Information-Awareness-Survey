@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--  browser tab title  -->
+    <title>GitHub User Information Awareness Survey</title>
+    <!--  css style templates  -->
+    <link rel="stylesheet" href="../static/css/config.css"/>
+    <link rel="stylesheet" href="../static/css/center.css"/>
+    <link rel="stylesheet" href="../static/css/choice.css"/>
+    <link rel="stylesheet" href="../static/css/column.css"/>
+    <link rel="stylesheet" href="../static/css/footer.css"/>
+    <link rel="stylesheet" href="../static/css/hover.css"/>
+    <!--  js functions  -->
+    <script src="../static/js/file.js"></script>
+    <script src="../static/js/include-html.js"></script>
+    <script src="../static/js/pages.js"></script>
+    <script src="../static/js/parse-csv.js"></script>
+    <script src="../static/js/progress.js"></script>
+    <script src="../static/js/query.js"></script>
+    <!--  browser tab image  -->
+    <link rel="icon" type="image/x-icon" href="../static/media/favicon.ico">
+</head>
+
+<body>
+    <!--  include header  -->
+    <header>
+        <!--  header image  -->
+        <a href="https://www.vanderbilt.edu">
+            <img src="../static/media/vu-logo.png" alt="vu-logo" width="150">
+        </a>
+        <!--  header title  -->
+        <h2 class="center" style="font: 24px Georgia"> GitHub User Information Awareness Survey </h2>
+        <progress id="progress" value="0" max="100"></progress>
+        <span id="percentage" style="font: 12px Georgia">0%</span>
+    </header>
+
+    <div class="consent" style="width:800px; margin-left: auto; margin-right: auto; text-align: left">
+        <h3 style="text-align: center;"> Consent Form</h3>
+        <div>
+            The following information is provided to inform you about the research project and your participation in it. Please read this form carefully and feel free to ask any questions you may have about this study and the information given below. You will be given an opportunity to ask questions, and your questions will be answered. Also, you will be given a copy of this consent form.
+        </div>
+        <br>
+        <div>
+            <b>Key information about this study:</b> <br>
+            In this study, we will ask you about public commits that are associated with you by email or name but are also associated with other suspicious identities. We will also ask a few general questions and some demographic questions at the end of this study. Through this survey, you may discover potential risks to your personal GitHub account information and may learn about a Git procedure (commit signing). The realization of potential risks may cause concern or other discomforts. This study should take around 5 to 10 minutes to complete. You must be over 18 years old to be eligible for this study. Upon completion, you may enter an email address for a chance to get a $25 Amazon eGift Card through a ruffle. The ruffle for reward will be random, and we guarantee that there will be at least one winner for every 50 participants. All rewards will be sent out through email within 5 business days after this survey closes.
+        </div>
+        <br>
+        <div>
+            <b>Detailed Information:</b> <br>
+            You are being asked to take part in this research study because this study will help researchers to advance the understanding of potential GitHub user information vulnerabilities. This study will also help researchers develop effective means of mitigation. <br><br>
+            You do not have to be in this research study. You may choose not to be in this study. You can stop being in this study at any time. If we learn something new that may affect the risks or benefits of this study, you will be told so that you can decide whether or not you still want to be in this study.
+        </div>
+        <br>
+        <div>
+            <b>Procedures to be followed and approximate duration of the study:</b> <br>
+            This study should take around 5 to 10 minutes to complete, and all activities will be through the online interface.
+        </div>
+        <br>
+        <div>
+            <b>Description of the discomforts, inconveniences, and/or risks that can be reasonably expected as a result of participation in this study:</b> <br>
+            Participants may discover risks to their personal information and/or risks to their personal GitHub account. The realization or discovery may or may not cause discomfort and/or concern.
+        </div>
+        <br>
+        <div>
+            <b>Compensation in case of study-related injury:</b> <br>
+            Due to the nature of this study (an online study), there should not be any study-related injuries. If it is determined by Vanderbilt that an injury occurred, then you and/or your insurance may be billed for the cost of medical care provided at Vanderbilt to treat the injury. You will be responsible for any copayments or deductibles associated with the treatment of that injury. There are no plans for Vanderbilt to pay for the costs of any additional care. There are no plans for Vanderbilt to give you money for the injury.
+        </div>
+        <br>
+        <div>
+            <b>Good effects that might result from this study:</b> <br>
+            1. This study will help researchers advance the understanding of potential GitHub user information vulnerabilities. <br>
+            2. This study will help researchers to develop effective ways of mitigating any potential risks to GitHub users’ account information (i.e., name and email). <br>
+            3. You may learn about potential risks to your GitHub account and take preventative measures for account information security.
+        </div>
+        <br>
+        <div>
+            <b>Study Results:</b> <br>
+            The results of this study will not be shared with the participant after completion of the online survey. Aggregate results are expected to publish in the future. No personally identifiable data will be collected during this study, and survey results will only be examined and presented in aggregates.
+        </div>
+        <br>
+        <div>
+            <b>Compensation for participation:</b> <br>
+            You are not allowed to accept any money for taking part in this study if you are not eligible to receive money from a U.S. person or company or the U.S. government because of U.S. national security and/or foreign policy laws. You can still take part in the study however, you will not be paid if you are a resident of a country restricted by the U.S. government’s comprehensive territorial sanctions or if you are listed on the U.S. Treasury Department’s Office of Foreign Assets Control’s Specially Designated Nationals (SDN) list of prohibited individuals. You do not have to say why you choose not to be paid.
+        </div>
+        <br>
+        <div>
+            <b>What happens if you choose to withdraw from study participation?</b> <br>
+            You may opt-out of this study at any time, and your responses and results will not be used. No compensation will be provided if you decide to withdraw from this study.
+        </div>
+        <br>
+        <div>
+            <b>Contact Information:</b> <br>
+            If you should have any questions about this research study or possibly injury, please feel free to contact Anda Liang at anda.liang@vanderbilt.edu or my faculty advisor, Yu Huang at yu.huang@vanderbilt.edu <br>
+            For additional information about giving consent or your rights as a participant in this study, to discuss problems, concerns, and questions, or to offer input, please feel free to contact the Institutional Review Board Office at (615) 322-2918 or toll free at (866) 224-8273.
+        </div>
+        <br>
+        <div>
+            <b>Confidentiality/Data Security:</b> <br>
+            All efforts, within reason, will be made to keep your personal information in your research record confidential but total confidentiality cannot be guaranteed. Each participant’s study link will be designed with a universally unique identifier (UUID). The study website and related data will be hosted on the researchers’ secure server.
+        </div>
+        <br>
+        <div>
+            <b>Privacy:</b> <br>
+            <b>Do you have to sign this Authorization?</b> <br>
+            You do not have to sign this Authorization, but if you do not, you may not join the study.
+        </div>
+        <br>
+        <div>
+            <b>How long will your response be used or shared?</b> <br>
+            All identifiable information related to you [i.e., name(s) and email(s)] are found and collected from public sources (GitHub public events). Your authorization for the collection, use, and sharing of your response does not expire. Additionally, you agree that your response may be used for similar or related future research studies.
+        </div>
+        <br>
+        <div>
+            <b>What if you change your mind?</b> <br>
+            You may change your mind and cancel this Authorization at any time. If you cancel, you must contact the Principal Investigator in writing to let them know by using the contact information provided in this consent form. Your cancellation will not affect information already collected in the study, or information that has already been shared with others before you canceled your authorization.
+        </div>
+        <br>
+        <div>
+            <b>You will get a copy of this form after it is signed.</b> <br>
+        </div>
+        <br><br>
+
+        <div>
+            *Typing your name equates to a digital signature for this consent form. <br><br>
+        </div>
+        <div id="date">
+            <script>
+               const today = new Date();
+               const date = `${today.getFullYear()}/${(today. getMonth()+1)}/${today. getDate()}`;
+               ele = document.getElementById("date");
+               ele.innerHTML = `Date: ${date}`;
+            </script>
+        </div>
+        <br>
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+<!--    <footer class="site-footer center" style="position: relative; padding-top: 100px">-->
+<!--        <hr>-->
+<!--        <a href="https://engineering.vanderbilt.edu/">-->
+<!--            <img src="../static/media/vuse-logo.png" alt="vuse-logo" width="250" style="margin-top: -10px">-->
+<!--        </a>-->
+
+<!--        <p class="caption" style="font: 15px Times;">-->
+<!--            Copyright &copy; 2022 All Rights Reserved by-->
+<!--            <a href="https://engineering.vanderbilt.edu/">VUSE</a>. <br>-->
+<!--            Any Questions? <a href="mailto:anda.liang@vanderbilt.edu">Contact Us</a>-->
+<!--        </p>-->
+<!--    </footer>-->
+</body>
+
+</html>
