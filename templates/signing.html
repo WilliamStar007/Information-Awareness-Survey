@@ -21,7 +21,7 @@
         </a>
         <!--  header title  -->
         <h2 class="center" style="font: 24px Georgia"> GitHub User Information Awareness Survey </h2>
-        <progress class="end" id="progress" value="100" max="100"></progress>
+        <progress class="end" id="progress" value="0" max="100"></progress>
         <span class="end" id="percentage" style="font: 12px Georgia">100%</span>
     </header>
 
@@ -29,26 +29,24 @@
         <h3 style="text-align: center;">What is Commit Signing?</h3>
 
         Commit signing is also known as code signing. It uses cryptography (e.g., GPG,
-        SSH, or S/MIME signatures) to add digital signature to transferred data.
+        SSH, or S/MIME signatures) to add a digital signature to transferred data.
         Receivers of the data (such as GitHub) can then verify the authenticity of the
-        data. Verified commits will have a green verified tag as shown below. <br><br>
+        data. Verified commits will have a green verified tag as shown below: <br><br>
 
-        All commits made using the GitHub interface will automatically be signed. Signing
-        of local commits should be done through the Git client. For details, please see
-        GitHub documentation on signing commits:
+        <img src="../static/media/commit-sign.png" alt="commit-sign" width="300">
+        <br><br>
+
+        All commits made using the GitHub interface will automatically be signed. The
+        signing of local commits should be done through the Git client. For details,
+        please see GitHub documentation on signing commits:
         <a href="https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits">
             https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits
         </a> <br><br>
 
-        For this survey, we will refer to signed commits as <b>Verified</b> commits.
-
-        <br><br>
-        Image from GitHub Documentation for Commit Signing:
-        <img src="../static/media/commit-sign.png" alt="commit-sign" width="300">
-
-
-
-
+        For this survey, we will refer to signed commits as verified commits.
+        When commit information is shown in tables, the column called <b>Verified</b>
+        indicates the signing status of a commit: <b>TRUE</b> represents a commit is
+        signed, while <b>FALSE</b> represents a commit is not signed.
     </div>
 
 <!--    <footer class="site-footer center">-->
