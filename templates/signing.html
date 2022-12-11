@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub User Information Awareness Survey</title>
+    <link rel="stylesheet" href="../static/css/config.css"/>
+    <link rel="stylesheet" href="../static/css/footer.css"/>
+    <link rel="stylesheet" href="../static/css/center.css"/>
+    <!--  js functions  -->
+    <script src="../static/js/query.js"></script>
+    <!--  browser tab image  -->
+    <link rel="icon" type="image/x-icon" href="../static/media/favicon.ico">
+</head>
+
+<body>
+    <!--  include header  -->
+    <header>
+        <!--  header image  -->
+        <a href="https://www.vanderbilt.edu">
+            <img src="../static/media/vu-logo.png" alt="vu-logo" width="150">
+        </a>
+        <!--  header title  -->
+        <h2 class="center" style="font: 24px Georgia"> GitHub User Information Awareness Survey </h2>
+        <progress class="end" id="progress" value="100" max="100"></progress>
+        <span class="end" id="percentage" style="font: 12px Georgia">100%</span>
+    </header>
+
+    <div style="width: 600px; margin: auto; text-align: left;">
+        <h3 style="text-align: center;">What is Commit Signing?</h3>
+
+        Commit signing is also known as code signing. It uses cryptography (e.g., GPG,
+        SSH, or S/MIME signatures) to add digital signature to transferred data.
+        Receivers of the data (such as GitHub) can then verify the authenticity of the
+        data. Verified commits will have a green verified tag as shown below. <br><br>
+
+        All commits made using the GitHub interface will automatically be signed. Signing
+        of local commits should be done through the Git client. For details, please see
+        GitHub documentation on signing commits:
+        <a href="https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits">
+            https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits
+        </a> <br><br>
+
+        For this survey, we will refer to signed commits as <b>Verified</b> commits.
+
+        <br><br>
+        Image from GitHub Documentation for Commit Signing:
+        <img src="../static/media/commit-sign.png" alt="commit-sign" width="300">
+
+
+
+
+    </div>
+
+<!--    <footer class="site-footer center">-->
+<!--        <hr>-->
+<!--        <a href="https://engineering.vanderbilt.edu/">-->
+<!--            <img src="../static/media/vuse-logo.png" alt="vuse-logo" width="250" style="margin-top: -10px">-->
+<!--        </a>-->
+
+<!--        <p class="caption" style="font: 15px Times;">-->
+<!--            Copyright &copy; 2022 All Rights Reserved by-->
+<!--            <a href="https://engineering.vanderbilt.edu/">VUSE</a>. <br>-->
+<!--            Any Questions? <a href="mailto:anda.liang@vanderbilt.edu">Contact Us</a>-->
+<!--        </p>-->
+<!--    </footer>-->
+
+    <!--  load page based on status  -->
+    <script type="text/javascript">
+        window.onload = function() {
+            const status = query('Status');
+            if (status === "error") {
+                const endElems = document.getElementsByClassName('end');
+                const errorElems = document.getElementsByClassName('error');
+
+                for (const ele of endElems) ele.style.display = 'none';
+                for (const ele of errorElems) ele.style.display = 'block';
+            }
+        };
+    </script>
+</body>
+
+</html>
